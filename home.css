@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    --color-background: #030303
+}
+
+.First-Page{
+    height: 100vh;
+    width: 100vw;
+}
+.background-first{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#dbdbdb,#595959,var(--color-background));
+    opacity: 0.6;
+}
+
+.title-first{
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-family: "Creepster", system-ui;
+    font-size: 8rem;
+    color: transparent; /* Torna o texto transparente para usar o gradiente como cor de fundo */
+    background-image: linear-gradient(to bottom, white, red); /* Define o gradiente linear */
+    background-clip: text;
+    animation: title-animation 2.5s infinite;
+}
+
+@keyframes title-animation{
+    0%{
+        background-image: linear-gradient(to bottom, white, red);
+    }
+    50%{
+        background-image: linear-gradient(to bottom, red, white);
+    }
+}
+
+
+
+.lax{
+    background: var(--color-background);
+    height: 20vh;
+    width: 100vw;
+}
